@@ -15,7 +15,10 @@ pipeline {
     }
     stage ('Deploy') {
       steps {
-        echo 'Deployment successful!'
+        // Introducing an error into the Jenkinsfile!
+        // Command `echp` does not exist.
+        // Intended command: `echo`
+        echp 'Deployment successful!'
       }
     }
   }
